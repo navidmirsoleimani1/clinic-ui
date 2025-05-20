@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>تنظیم برنامه کاری پزشک</title>
+<style>
+  @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.034/Vazirmatn-font-face.css');
+
+  body {
+    font-family: 'Vazirmatn', sans-serif;
+    background: #f7f7f7;
+    margin: 20px;
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    width: 380px;
+    text-align: right;
+  }
+
+  h2 {
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  label {
+    font-size: 14px;
+    color: #555;
+  }
+
+  input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    text-align: right;
+  }
+
+  button {
+    padding: 12px;
+    background: #1ba89c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  button:hover {
+    background: #159387;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>تنظیم برنامه کاری پزشک</h2>
+    <form>
+      <label for="doctorName">نام پزشک:</label>
+      <input type="text" id="doctorName" placeholder="نام پزشک" required />
+
+      <label for="workDays">روزهای کاری:</label>
+      <select id="workDays" multiple size="7" required>
+        <option value="saturday">شنبه</option>
+        <option value="sunday">یکشنبه</option>
+        <option value="monday">دوشنبه</option>
+        <option value="tuesday">سه‌شنبه</option>
+        <option value="wednesday">چهارشنبه</option>
+        <option value="thursday">پنج‌شنبه</option>
+        <option value="friday">جمعه</option>
+      </select>
+
+      <label for="workHours">ساعات کاری:</label>
+      <input type="text" id="workHours" placeholder="مثلاً ۹ تا ۱۳، ۱۵ تا ۱۹" required />
+
+      <button type="submit">ثبت برنامه کاری</button>
+    </form>
+  </div>
+</body>
+</html>
