@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>بایگانی نسخه‌ها</title>
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.034/Vazirmatn-font-face.css');
+
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 20px;
+      direction: rtl;
+    }
+
+    .container {
+      max-width: 600px;
+      background: white;
+      border-radius: 20px;
+      padding: 25px 30px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      margin: auto;
+    }
+
+    h2 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .prescription-list {
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background: #fafafa;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    .prescription-item {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+    }
+
+    .prescription-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .date {
+      color: #1ba89c;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .details {
+      color: #444;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>بایگانی نسخه‌ها</h2>
+    <div class="prescription-list">
+      <div class="prescription-item">
+        <div class="date">۱۴۰۲/۰۸/۱۰</div>
+        <div class="details">قرص استامینوفن، ۵۰۰ میلی‌گرم، روزی ۳ بار بعد از غذا</div>
+      </div>
+      <div class="prescription-item">
+        <div class="date">۱۴۰۲/۰۶/۱۵</div>
+        <div class="details">آمپول آنتی‌بیوتیک، یک دوز</div>
+      </div>
+      <div class="prescription-item">
+        <div class="date">۱۴۰۲/۰۴/۲۰</div>
+        <div class="details">قرص ویتامین D، هفته‌ای ۲ بار</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
