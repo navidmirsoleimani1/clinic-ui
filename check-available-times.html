@@ -1,51 +1,89 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>بررسی زمان‌های خالی</title>
-  <link rel="stylesheet" href="style1.css" />
   <style>
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background: #eef3f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+      width: 380px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #1ba89c;
+      margin-bottom: 20px;
+    }
+
+    input[type="date"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #1ba89c;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #159387;
+    }
+
     .available-times {
-  text-align: right;
-  margin-top: 20px;
-  background: #f1fefc;
-  padding: 15px;
-  border-radius: 10px;
-}
+      margin-top: 20px;
+      text-align: right;
+    }
 
-.available-times h4 {
-  margin-bottom: 10px;
-  color: #1ba89c;
-}
-
-.available-times ul {
-  list-style-type: disc;
-  padding-right: 20px;
-}
-
-.available-times li {
-  margin-bottom: 5px;
-}
+    .time-slot {
+      background: #e0f8f4;
+      border-radius: 8px;
+      padding: 8px 12px;
+      margin: 5px 0;
+      color: #1ba89c;
+    }
   </style>
 </head>
 <body>
-  <div class="form-container">
-    <img src="https://cdn-icons-png.flaticon.com/512/5974/5974636.png" alt="calendar-check" class="form-icon" />
+  <div class="container">
     <h2>بررسی زمان‌های خالی</h2>
-    <form>
-      <input type="date" placeholder="انتخاب تاریخ" required />
-      <button type="submit">نمایش زمان‌های خالی</button>
-    </form>
+    <input type="date" id="date" />
+    <button onclick="showTimes()">نمایش زمان‌های خالی</button>
 
-    <div class="available-times">
-      <h4>ساعات آزاد:</h4>
-      <ul>
-        <li>۰۹:۰۰ تا ۰۹:۳۰</li>
-        <li>۱۰:۳۰ تا ۱۱:۰۰</li>
-        <li>۱۴:۰۰ تا ۱۴:۳۰</li>
-      </ul>
-    </div>
+    <div class="available-times" id="timesList"></div>
   </div>
+
+  <script>
+    function showTimes() {
+      const timesList = document.getElementById("timesList");
+      timesList.innerHTML = `
+        <div class="time-slot">۹:۰۰ - ۹:۳۰</div>
+        <div class="time-slot">۱۰:۰۰ - ۱۰:۳۰</div>
+        <div class="time-slot">۱۲:۳۰ - ۱۳:۰۰</div>
+        <div class="time-slot">۱۶:۰۰ - ۱۶:۳۰</div>
+      `;
+    }
+  </script>
 </body>
 </html>
