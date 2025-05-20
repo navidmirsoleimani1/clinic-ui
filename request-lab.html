@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>درخواست آزمایش</title>
+  <style>
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+      width: 320px;
+      text-align: center;
+    }
+
+    .form-icon {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      color: #1ba89c;
+      margin-bottom: 20px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #1ba89c;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #159387;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <img src="https://cdn-icons-png.flaticon.com/512/4505/4505386.png" class="form-icon" alt="آزمایش" />
+    <h2>درخواست آزمایش</h2>
+    <form>
+      <input type="text" placeholder="نام بیمار" required />
+      <input type="text" placeholder="کد ملی یا پرونده" required />
+      <select required>
+        <option value="">نوع آزمایش</option>
+        <option>خون</option>
+        <option>ادرار</option>
+        <option>تصویربرداری</option>
+        <option>سایر</option>
+      </select>
+      <textarea rows="3" placeholder="توضیحات پزشک"></textarea>
+      <button type="submit">ثبت درخواست</button>
+    </form>
+  </div>
+</body>
+</html>
