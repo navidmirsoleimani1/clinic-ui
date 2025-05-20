@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>یادآوری نوبت</title>
+  <link rel="stylesheet" href="style1.css" />
+  <style>
+    textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  resize: vertical;
+  margin-top: 10px;
+}
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <img src="https://cdn-icons-png.flaticon.com/512/1034/1034551.png" alt="reminder" class="form-icon" />
+    <h2>ارسال یادآوری نوبت</h2>
+    <form>
+      <input type="text" placeholder="نام یا کد ملی بیمار" required />
+      <input type="date" placeholder="تاریخ نوبت" required />
+      <select required>
+        <option value="">نوع یادآوری</option>
+        <option value="sms">پیامک</option>
+        <option value="call">تماس تلفنی</option>
+      </select>
+      <textarea placeholder="متن پیام (در صورت پیامک)" rows="4"></textarea>
+      <button type="submit">ارسال یادآوری</button>
+    </form>
+  </div>
+</body>
+</html>
