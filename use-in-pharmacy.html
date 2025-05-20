@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>استفاده از نسخه</title>
+  <style>
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      direction: rtl;
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+      width: 320px;
+      text-align: center;
+    }
+
+    .form-icon {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      color: #1ba89c;
+      margin-bottom: 20px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #1ba89c;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #159387;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <img src="https://cdn-icons-png.flaticon.com/512/2921/2921826.png" class="form-icon" alt="داروخانه" />
+    <h2>استفاده از نسخه در داروخانه</h2>
+    <form>
+      <input type="text" placeholder="کد نسخه" required />
+      <input type="text" placeholder="نام داروخانه" required />
+      <select required>
+        <option value="">وضعیت استفاده</option>
+        <option value="done">دارو دریافت شد</option>
+        <option value="pending">در حال بررسی</option>
+        <option value="problem">مشکل در نسخه</option>
+      </select>
+      <button type="submit">ثبت وضعیت</button>
+    </form>
+  </div>
+</body>
+</html>
