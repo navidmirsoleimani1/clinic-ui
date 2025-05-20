@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>محاسبه هزینه ویزیت</title>
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.034/Vazirmatn-font-face.css');
+
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background: #f7f7f7;
+      margin: 20px;
+      direction: rtl;
+    }
+
+    .container {
+      max-width: 400px;
+      background: white;
+      border-radius: 20px;
+      padding: 30px 25px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      margin: auto;
+      text-align: center;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 25px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    form label {
+      text-align: right;
+      font-size: 14px;
+      color: #555;
+    }
+
+    form input[type="number"], form select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 14px;
+      box-sizing: border-box;
+      text-align: right;
+    }
+
+    form button {
+      padding: 12px;
+      background: #1ba89c;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background: #159387;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #1ba89c;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>محاسبه هزینه ویزیت</h2>
+    <form id="costForm">
+      <label for="baseCost">هزینه پایه ویزیت (تومان):</label>
+      <input type="number" id="baseCost" placeholder="مثلاً 100000" required />
+
+      <label for="insurance">انتخاب بیمه:</label>
+      <select id="insurance" required>
+        <option value="">انتخاب کنید</option>
+        <option value="none">بدون بیمه</option>
+        <option value="basic">بیمه پایه (۱۰٪ تخفیف)</option>
+        <option value="premium">بیمه تکمیلی (۲۰٪ تخفیف)</option>
+      </select>
+
+      <label for="discount">مقدار تخفیف (تومان):</label>
+      <input type="number" id="discount" placeholder="مثلاً 5000" value="0" min="0" />
+
+      <button type="submit">محاسبه</button>
+    </form>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    const form = document.getElementById('costForm');
+    const result = document.getElementById('result');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const baseCost = parseFloat(document.getElementById('baseCost').value) || 0;
+      const insurance = document.getElementById('insurance').value;
+      const discount = parseFloat(document.getElementById('discount').value) || 0;
+
+      let finalCost = baseCost;
+
+      if (insurance === 'basic') {
+        finalCost = finalCost * 0.9;
+      } else if (insurance === 'premium') {
+        finalCost = finalCost * 0.8;
+      }
+
+      finalCost = finalCost - discount;
+      if (finalCost < 0) finalCost = 0;
+
+      result.textContent = 'هزینه نهایی ویزیت: ' + finalCost.toLocaleString() + ' تومان';
+    });
+  </script>
+</body>
+</html>
