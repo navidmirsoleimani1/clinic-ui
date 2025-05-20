@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>صدور فاکتور</title>
+<style>
+  @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.034/Vazirmatn-font-face.css');
+
+  body {
+    font-family: 'Vazirmatn', sans-serif;
+    background: #f7f7f7;
+    margin: 20px;
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .invoice-container {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    width: 400px;
+    text-align: right;
+  }
+
+  h2 {
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .invoice-details {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  .invoice-details div {
+    margin-bottom: 10px;
+  }
+
+  button.print-btn {
+    width: 100%;
+    padding: 12px;
+    background: #1ba89c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  button.print-btn:hover {
+    background: #159387;
+  }
+</style>
+</head>
+<body>
+  <div class="invoice-container">
+    <h2>فاکتور پرداخت</h2>
+    <div class="invoice-details">
+      <div><strong>نام بیمار:</strong> علی رضایی</div>
+      <div><strong>تاریخ:</strong> ۱۴۰۲/۰۲/۱۰</div>
+      <div><strong>مبلغ کل:</strong> ۱۵۰,۰۰۰ تومان</div>
+      <div><strong>روش پرداخت:</strong> کارت بانکی</div>
+    </div>
+    <button class="print-btn" onclick="window.print()">چاپ فاکتور</button>
+  </div>
+</body>
+</html>
