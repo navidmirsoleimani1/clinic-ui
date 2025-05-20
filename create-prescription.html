@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>ثبت نسخه</title>
+  <style>
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background: #f6f6f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      direction: rtl;
+    }
+
+    .form-container {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      width: 320px;
+      text-align: center;
+    }
+
+    .form-icon {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #1ba89c;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    form textarea {
+      resize: vertical;
+    }
+
+    form button {
+      width: 100%;
+      padding: 12px;
+      background: #1ba89c;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: #159387;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <img src="https://cdn-icons-png.flaticon.com/512/2904/2904565.png" class="form-icon" alt="نسخه" />
+    <h2>ثبت نسخه توسط پزشک</h2>
+    <form>
+      <input type="text" placeholder="نام بیمار" required />
+      <input type="text" placeholder="کد پرونده پزشکی" required />
+      <textarea placeholder="داروهای تجویزی + توضیحات" rows="5" required></textarea>
+      <input type="date" required />
+      <button type="submit">ثبت نسخه</button>
+    </form>
+  </div>
+</body>
+</html>
