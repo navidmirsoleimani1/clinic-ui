@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>بررسی زمان‌های خالی</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .available-times {
+  text-align: right;
+  margin-top: 20px;
+  background: #f1fefc;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.available-times h4 {
+  margin-bottom: 10px;
+  color: #1ba89c;
+}
+
+.available-times ul {
+  list-style-type: disc;
+  padding-right: 20px;
+}
+
+.available-times li {
+  margin-bottom: 5px;
+}
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <img src="https://cdn-icons-png.flaticon.com/512/5974/5974636.png" alt="calendar-check" class="form-icon" />
+    <h2>بررسی زمان‌های خالی</h2>
+    <form>
+      <input type="date" placeholder="انتخاب تاریخ" required />
+      <button type="submit">نمایش زمان‌های خالی</button>
+    </form>
+
+    <div class="available-times">
+      <h4>ساعات آزاد:</h4>
+      <ul>
+        <li>۰۹:۰۰ تا ۰۹:۳۰</li>
+        <li>۱۰:۳۰ تا ۱۱:۰۰</li>
+        <li>۱۴:۰۰ تا ۱۴:۳۰</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
