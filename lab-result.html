@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>ثبت نتایج آزمایش</title>
+  <style>
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background-color: #f8f8f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+      width: 350px;
+      text-align: center;
+    }
+
+    .form-icon {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      color: #1ba89c;
+      margin-bottom: 20px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #1ba89c;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #159387;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <img src="https://cdn-icons-png.flaticon.com/512/619/619034.png" class="form-icon" alt="Lab Result" />
+    <h2>ثبت نتایج آزمایش</h2>
+    <form>
+      <input type="text" placeholder="نام بیمار" required />
+      <input type="text" placeholder="شماره پرونده" required />
+      <textarea placeholder="نتایج آزمایش را وارد کنید..." required></textarea>
+      <button type="submit">ثبت نتایج</button>
+    </form>
+  </div>
+</body>
+</html>
