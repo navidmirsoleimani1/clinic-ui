@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تجویز نسخه</title>
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.034/Vazirmatn-font-face.css');
+
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      direction: rtl;
+      margin: 0;
+    }
+
+    .form-container {
+      background: white;
+      padding: 30px 25px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      width: 400px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 14px;
+      box-sizing: border-box;
+      resize: vertical;
+    }
+
+    form button {
+      width: 100%;
+      padding: 12px;
+      background: #1ba89c;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background: #159387;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>تجویز نسخه</h2>
+    <form>
+      <input type="text" placeholder="نام دارو" required />
+      <input type="text" placeholder="دوز دارو (مثلاً ۲۵۰ میلی‌گرم)" required />
+      <textarea placeholder="توضیحات (نحوه مصرف، تعداد دفعات و ...)" rows="3"></textarea>
+      <button type="submit">ثبت نسخه</button>
+    </form>
+  </div>
+</body>
+</html>
