@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>تماس پیگیری درمان</title>
+<style>
+  @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.034/Vazirmatn-font-face.css');
+
+  body {
+    font-family: 'Vazirmatn', sans-serif;
+    background: #f7f7f7;
+    margin: 20px;
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    width: 380px;
+    text-align: right;
+  }
+
+  h2 {
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  label {
+    font-size: 14px;
+    color: #555;
+  }
+
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    text-align: right;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+
+  button {
+    padding: 12px;
+    background: #1ba89c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  button:hover {
+    background: #159387;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>تماس پیگیری درمان</h2>
+    <form>
+      <label for="patientName">نام بیمار:</label>
+      <input type="text" id="patientName" placeholder="نام بیمار" required />
+
+      <label for="phoneNumber">شماره تماس بیمار:</label>
+      <input type="tel" id="phoneNumber" placeholder="شماره تماس بیمار" required />
+
+      <label for="notes">یادداشت‌ها:</label>
+      <textarea id="notes" placeholder="یادداشت درباره تماس و پیگیری" required></textarea>
+
+      <button type="submit">ثبت تماس</button>
+    </form>
+  </div>
+</body>
+</html>
