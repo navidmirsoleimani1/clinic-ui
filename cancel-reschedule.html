@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>لغو یا جابجایی نوبت</title>
+  <link rel="stylesheet" href="style1.css" />
+  <style>
+    select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828665.png" alt="cancel-reschedule" class="form-icon" />
+    <h2>لغو یا جابجایی نوبت</h2>
+    <form>
+      <input type="text" placeholder="کد ملی بیمار" required />
+      <input type="date" placeholder="تاریخ نوبت فعلی" required />
+      <select required>
+        <option value="" disabled selected>انتخاب اقدام</option>
+        <option value="cancel">لغو نوبت</option>
+        <option value="reschedule">جابجایی نوبت</option>
+      </select>
+      <input type="date" placeholder="تاریخ جدید (در صورت جابجایی)" />
+      <button type="submit">ثبت تغییرات</button>
+    </form>
+  </div>
+</body>
+</html>
