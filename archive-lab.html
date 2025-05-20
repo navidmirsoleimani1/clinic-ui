@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>بایگانی نتایج آزمایش</title>
+  <style>
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .archive-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+      width: 400px;
+      text-align: center;
+    }
+
+    .form-icon {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      color: #1ba89c;
+      margin-bottom: 20px;
+    }
+
+    select, input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #1ba89c;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #159387;
+    }
+  </style>
+</head>
+<body>
+  <div class="archive-container">
+    <img src="https://cdn-icons-png.flaticon.com/512/1480/1480483.png" class="form-icon" alt="Archive Icon" />
+    <h2>بایگانی نتایج آزمایش</h2>
+    <form>
+      <input type="text" placeholder="نام بیمار" required />
+      <input type="text" placeholder="شماره پرونده" required />
+      <select required>
+        <option value="">انتخاب نوع آزمایش</option>
+        <option value="blood">خون</option>
+        <option value="urine">ادرار</option>
+        <option value="xray">تصویربرداری</option>
+      </select>
+      <input type="date" required />
+      <button type="submit">بایگانی نتیجه</button>
+    </form>
+  </div>
+</body>
+</html>
