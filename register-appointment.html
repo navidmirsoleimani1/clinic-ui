@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ثبت نوبت</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <div class="form-container">
+    <img src="https://cdn-icons-png.flaticon.com/512/3649/3649469.png" alt="calendar" class="form-icon" />
+    <h2>ثبت نوبت</h2>
+    <form>
+      <input type="text" placeholder="نام بیمار" required />
+      <input type="date" placeholder="تاریخ نوبت" required />
+      <select required>
+        <option value="">انتخاب ساعت</option>
+        <option value="09:00">۰۹:۰۰</option>
+        <option value="10:00">۱۰:۰۰</option>
+        <option value="11:00">۱۱:۰۰</option>
+        <option value="14:00">۱۴:۰۰</option>
+        <option value="15:00">۱۵:۰۰</option>
+      </select>
+      <select required>
+        <option value="">نوع ویزیت</option>
+        <option value="حضوری">حضوری</option>
+        <option value="آنلاین">آنلاین</option>
+      </select>
+      <select required>
+        <option value="">وضعیت نوبت</option>
+        <option value="قطعی">قطعی</option>
+        <option value="رزرو">رزرو</option>
+      </select>
+      <button type="submit">ثبت نوبت</button>
+    </form>
+  </div>
+</body>
+</html>
