@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>ثبت نوبت</title>
+  <meta charset="UTF-8" />
+  <title>درخواست نوبت</title>
   <style>
     body {
       font-family: 'Vazirmatn', sans-serif;
-      background: #f0f0f0;
+      background: #f7f7f7;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      direction: rtl;
     }
 
     .form-container {
       background: white;
       padding: 30px;
       border-radius: 20px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
-      width: 350px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      width: 300px;
       text-align: center;
     }
 
-    .form-container img {
+    .form-icon {
       width: 60px;
       margin-bottom: 15px;
     }
 
     h2 {
-      color: #1ba89c;
       margin-bottom: 20px;
+      color: #333;
     }
 
-    input, select {
+    form input,
+    form select {
       width: 100%;
       padding: 10px;
       margin-bottom: 15px;
@@ -41,7 +43,7 @@
       font-size: 14px;
     }
 
-    button {
+    form button {
       width: 100%;
       padding: 12px;
       background: #1ba89c;
@@ -52,25 +54,25 @@
       cursor: pointer;
     }
 
-    button:hover {
+    form button:hover {
       background: #159387;
     }
   </style>
 </head>
 <body>
   <div class="form-container">
-    <img src="https://cdn-icons-png.flaticon.com/512/2920/2920244.png" alt="calendar icon">
-    <h2>ثبت نوبت</h2>
+    <img src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png" alt="doctor" class="form-icon" />
+    <h2>درخواست نوبت</h2>
     <form>
-      <input type="text" placeholder="نام بیمار" required />
+      <input type="text" placeholder="نام و نام خانوادگی" required />
       <input type="tel" placeholder="شماره تماس" required />
-      <input type="date" required />
+      <input type="date" placeholder="تاریخ موردنظر" required />
       <select required>
-        <option value="">انتخاب بازه زمانی</option>
+        <option value="">انتخاب زمان دلخواه</option>
         <option value="morning">صبح (۹ تا ۱۲)</option>
         <option value="afternoon">عصر (۱۴ تا ۱۸)</option>
       </select>
-      <button type="submit">ثبت نوبت</button>
+      <button type="submit">درخواست نوبت</button>
     </form>
   </div>
 </body>
