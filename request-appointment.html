@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>درخواست نوبت</title>
+  <style>
+    body {
+  font-family: 'Vazirmatn', sans-serif;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  direction: rtl;
+}
+
+.form-container {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  width: 300px;
+  text-align: center;
+}
+
+.form-icon {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background: #1ba89c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #159387;
+}
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <img src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png" alt="doctor" class="form-icon" />
+    <h2>درخواست نوبت</h2>
+    <form>
+      <input type="text" placeholder="نام و نام خانوادگی" required />
+      <input type="tel" placeholder="شماره تماس" required />
+      <input type="date" placeholder="تاریخ موردنظر" required />
+      <select required>
+        <option value="">انتخاب زمان دلخواه</option>
+        <option value="morning">صبح (۹ تا ۱۲)</option>
+        <option value="afternoon">عصر (۱۴ تا ۱۸)</option>
+      </select>
+      <button type="submit">درخواست نوبت</button>
+    </form>
+  </div>
+</body>
+</html>
