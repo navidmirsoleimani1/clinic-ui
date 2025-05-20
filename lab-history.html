@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>سوابق آزمایش‌ها</title>
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.034/Vazirmatn-font-face.css');
+
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background: #f7f7f7;
+      margin: 20px;
+      direction: rtl;
+    }
+
+    .container {
+      max-width: 700px;
+      background: white;
+      border-radius: 20px;
+      padding: 30px 25px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 25px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 25px;
+    }
+
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    th {
+      background: #1ba89c;
+      color: white;
+      border-radius: 10px 10px 0 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    form input, form select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    form button {
+      padding: 12px;
+      background: #1ba89c;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background: #159387;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>سوابق آزمایش‌ها</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>تاریخ آزمایش</th>
+          <th>نوع آزمایش</th>
+          <th>نتیجه</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>۱۴۰۲/۰۹/۰۵</td>
+          <td>خون کامل</td>
+          <td>طبیعی</td>
+        </tr>
+        <tr>
+          <td>۱۴۰۲/۰۸/۱۰</td>
+          <td>قند خون</td>
+          <td>بالا</td>
+        </tr>
+        <tr>
+          <td>۱۴۰۲/۰۷/۲۰</td>
+          <td>کلسترول</td>
+          <td>نرمال</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <form>
+      <input type="date" required />
+      <input type="text" placeholder="نوع آزمایش" required />
+      <input type="text" placeholder="نتیجه آزمایش" required />
+      <button type="submit">ثبت آزمایش جدید</button>
+    </form>
+  </div>
+</body>
+</html>
